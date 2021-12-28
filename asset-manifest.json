@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Project_3_Clickplay/static/css/main.57b42cf9.css",
+    "main.js": "/Project_3_Clickplay/static/js/main.8a5b4308.js",
+    "static/js/787.ab430c5f.chunk.js": "/Project_3_Clickplay/static/js/787.ab430c5f.chunk.js",
+    "index.html": "/Project_3_Clickplay/index.html",
+    "main.57b42cf9.css.map": "/Project_3_Clickplay/static/css/main.57b42cf9.css.map",
+    "main.8a5b4308.js.map": "/Project_3_Clickplay/static/js/main.8a5b4308.js.map",
+    "787.ab430c5f.chunk.js.map": "/Project_3_Clickplay/static/js/787.ab430c5f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57b42cf9.css",
+    "static/js/main.8a5b4308.js"
+  ]
+}
