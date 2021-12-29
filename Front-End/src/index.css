@@ -30,6 +30,7 @@ li a, .dropbtn {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-family: 'Cairo', sans-serif;
 }
 
 li a:hover, .dropdown:hover .dropbtn {
@@ -38,6 +39,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 li.dropdown {
   display: inline-block;
+  font-family: 'Cairo', sans-serif;
 }
 
 .dropdown-content {
@@ -61,4 +63,32 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+
+
+.banner {
+  background-color: white;
+  /* background-image: */
+  min-width: inherit;
+  max-height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-auto-rows: 1fr 1fr;
+  justify-content: left;
+  align-items: center;
+  padding-left: 5rem;
+  margin-bottom: 6rem;
+  padding-top: 10em;
+}
+
+.intro {
+  font-family: 'Orbitron', sans-serif;
+}
+
+.introMessage {
+  font-family: 'Cairo', sans-serif;
 }
