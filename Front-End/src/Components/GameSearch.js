@@ -1,17 +1,14 @@
-import Games from "./Components/Games";
+import Games from "./Games";
 
-
-function GameSearch (){
-
-  return(
+function GameSearch() {
+  return (
     <>
-    <div>
-      <Games />
-    </div>
-
+      <div>
+        <h2> Games Found: </h2>
+        <Games />
+      </div>
     </>
-
-  )
+  );
 }
 
-export default GameSearch; 
+export default GameSearch;
