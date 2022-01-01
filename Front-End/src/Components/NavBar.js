@@ -27,8 +27,7 @@ function NavBar() {
   <li><a href="#sign-up">Newsletter</a></li>
   <li><a href="#List">Top 10 Lists</a></li>
 </ul>
-</nav>
-
+</nav>                                                                                                                                                                                             
 
   );
 }

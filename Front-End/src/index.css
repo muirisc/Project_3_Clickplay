@@ -90,9 +90,9 @@ li.dropdown {
 .game {
   list-style: none;
   padding: 1;
-  margin: 2.3rem;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  /* margin: 2.3rem; */
+  margin-left: 1rem;
+  margin-right: 1rem;
   max-width: 50em;
   max-height: 50em;
   gap: 5rem;
@@ -102,11 +102,13 @@ li.dropdown {
 .gametitle {
   text-align: center;
   color: #fff;
+  font-size: 1.5em;
 }
 
 .gamerating {
   text-align: center;
   font-family: "Cario", sans-serif;
+  font-size: 1.2em;
 }
 .gameget {
   text-align: center;
@@ -117,5 +119,14 @@ li.dropdown {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  /* width: 50%; */
+
+}
+
+.storelogos li {
+ /* float: left; */
+ /* grid-template-columns: 1fr; */
+ font-family: "Cario", sans-serif;
+ display: inline-block;
+ grid-template-columns: 1fr 1fr;
 }

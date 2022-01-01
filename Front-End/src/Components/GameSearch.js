@@ -1,4 +1,4 @@
-import Games from "./Games";
+import Games from "./GameCard";
 
 function GameSearch() {
   return (
