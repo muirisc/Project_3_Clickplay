@@ -1,11 +1,24 @@
-
-
+body {
+  background-color: #fbf9d8;
+  margin: 0;
+}
 .NavBar {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 2rem;
   overflow: hidden;
   background-color: #d98236;
+  display: flex;
+  align-items: flex-end;
+}
+
+.NavBar li {
+  padding: 0rem 0rem 1.3rem 3.5rem;
+  font-size: 1.5rem;
+}
+
+.NavBar a {
+  border-radius: .5rem;
 }
 
 li {
@@ -24,14 +37,26 @@ li a,
 
 li a:hover,
 .dropdown:hover .dropbtn {
-  background-color: red;
+  background-color: #68b357;
 }
 
 li.dropdown {
   display: inline-block;
   font-family: "Cairo", sans-serif;
 }
-
+.filterBox{
+  display:inline-flex;
+  margin: 0rem 2rem 0rem;
+}
+.filterBox p{
+  margin: 0rem 2rem 0rem;
+  color: #d98236;
+  font-size: 20px;
+}
+.filterBox p:hover{
+  color:#5b3a1b;
+  
+}
 .dropdown-content {
   display: none;
   position: absolute;
@@ -58,7 +83,7 @@ li.dropdown {
 }
 
 .banner {
-  background-color: white;
+  background-color: #fbf9d8;
   /* background-image: */
   min-width: inherit;
   max-height: 100%;
@@ -71,48 +96,94 @@ li.dropdown {
   align-items: center;
   padding-left: 5rem;
   margin-bottom: 6rem;
-  padding-top: 10em;
+  padding-top: 1em;
+  background-image: url("./images/map-bg.png");
+  min-width: inherit;
+  max-height: 100%;
+}
+
+.gamefound {
+  font-family: "Orbitron", sans-serif;
+  margin-left: 2rem;
 }
 
 .intro {
+  display:flex;
   font-family: "Orbitron", sans-serif;
-  color: #568c30;
+  color: #5b3a1b;
+  font-size: 4.5rem;
+  margin: 0;
+  padding: 0;
+  align-items: top;
+
 }
 
 .introMessage {
   font-family: "Cairo", sans-serif;
-  color: #65bf24;
+  color: #404869;
+  font-size: 2rem;
+  
 }
 .gamebox {
   grid-template-columns: 1fr 1fr;
+  margin: 0;
   /* float: left; */
 }
 .game {
   list-style: none;
   padding: 1;
   /* margin: 2.3rem; */
-  margin-left: 1rem;
-  margin-right: 1rem;
-  max-width: 50em;
-  max-height: 50em;
+  margin: 0;
+  /* max-width: 50em; */
+  height: 45em;
   gap: 5rem;
-  background-color: #d98236;
+  background-color: #fbf9d8;
 }
 
 .gametitle {
   text-align: center;
-  color: #fff;
+  color: #3e914d;
+  font-size: 2em;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
+  /* find the bold of this font :) */
+}
+
+.gamegenre {
+  text-align: center;
+  color: #5b3a1b;
   font-size: 1.5em;
+  font-family: "Orbitron", sans-serif;
+  font-weight: bold;
 }
 
 .gamerating {
   text-align: center;
-  font-family: "Cario", sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 1.2em;
+  color: #d8823c;
 }
 .gameget {
-  text-align: center;
+  text-align: left;
   font-family: "Orbitron", sans-serif;
+  color: #d8823c;
+  font-size: 1.2em;
+}
+
+.gamedescrip {
+  font-family: "Cario", sans-serif;
+  background-color: #6c7ab5;
+  padding: 3rem;
+  /* margin-right: 4rem; */
+  color: #fff;
+  font-size: 1.2rem;
+  max-width: 800px;
+  justify-items: center;
+  align-content: center;
+  display: flex;
+  margin: auto;
+  border-radius: 1rem;
+  margin-bottom: 4rem;
 }
 
 .gameimg {
@@ -120,13 +191,249 @@ li.dropdown {
   margin-left: auto;
   margin-right: auto;
   /* width: 50%; */
+  max-height: 300px;
+  max-width: inherit;
+  border-radius: .5rem;
+}
+
+/* .gameInfoDiv{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+.gameScores {
+text-align: center;
+text-decoration: none;
+font-family: "Orbitron", sans-serif;
+font-size: 1.5rem;
+color: #3e914d;
+padding: 0;
+}
+
+.readytoupdate {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.2rem;
+  color:#68b357
+}
+
+
+.storelogos li {
+  /* float: left; */
+  /* grid-template-columns: 1fr; */
+  font-family: "Cario", sans-serif;
+  display: inline-block;
+  grid-template-columns: 1fr 1fr;
+  background-color: #65bf24;
+}
+
+.resultBox {
+  background-color: #fbf9d8;
+  height: 50rem;
+}
+
+.gamesListed {
+  display: block;
+}
+
+.storeLogo {
+  max-height: 80px;
+  max-width: inherit;
+}
+
+.storelogos {
+  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  /* flex-direction:row; */
+  /* margin: auto; */
+  width: 65%;
+  margin: auto;
 
 }
 
-.storelogos li {
- /* float: left; */
- /* grid-template-columns: 1fr; */
- font-family: "Cario", sans-serif;
- display: inline-block;
- grid-template-columns: 1fr 1fr;
+.storelogos img {
+  margin: 2rem;
+}
+
+/* .storeLogoNintendo {
+  margin-right: 4rem;
+} */
+
+.mainpag {
+  background-color: #fbf9d8;
+}
+
+.gameimglist {
+  max-height: 150px;
+  max-width: inherit;
+  /* float:left; */
+  display: inline-block;
+ margin-top: .5rem;
+ border-radius: 1rem;
+
+}
+.gamerow {
+  /* grid-template-columns: [first] 100px [line2] 50px [line3] auto [end];
+  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line]; */
+  margin: 2rem 1rem;
+  padding: 1rem;
+  background-color: #3e914d;
+  display: block;
+  grid-tempplate-row: 1fr 1fr;
+  border-radius: 0.25rem;
+}
+
+.gameRowName {
+  /* grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+  grid-row-end: 3; */
+  margin: .5rem 0rem 1rem 2rem;
+  font-family: "Orbitron", sans-serif;
+  color: #fff;
+}
+.gamedescriplist {
+  color: #fff;
+  margin: 0rem;
+  font-family: "Cario", sans-serif;
+}
+
+.gamerowinfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0rem 2rem;
+}
+
+.gamerowbutton{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  background-color: #d8823c;
+  font-family: "Orbitron", sans-serif;
+  border-radius:  1rem;
+  height: 3rem;
+  width:12rem;
+  font-size: 1rem;
+}
+
+.gamerowbutton:required
+ {
+  background-color: #6c7ab5;
+}
+
+.addGameIntroText {
+  font-family: "Orbitron", sans-serif;
+  color:#3e914d;
+  margin-left: 2rem;
+}
+
+.addGameForm {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.addGameForm input{
+margin: 0;
+border-radius: 0.25rem;
+margin-top: 1.1rem;
+margin-right: 2rem;
+}
+
+.addGameForm h3{
+  margin: .75rem;
+  padding: 0rem;
+  font-family: "Cario", sans-serif;
+  margin-left: 2rem;
+  color:#5b3a1b; 
+  }
+
+.platformBoxes{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+
+.platformBoxes input {
+  margin: 0;
+  border:#5b3a1b;
+  height: 1rem;
+  margin-left: 15rem;
+}
+.platformBoxes label {
+  font-family: "Cario", sans-serif;
+  padding: .025rem;
+  color:#5b3a1b
+}
+
+.mainPageButton {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  margin-right: 36rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  height: 2.2em;
+  width: inherit;
+  font-size: 1.8rem;
+
+  color: #5b3a1b;
+  background-color: #d8823c;
+  font-family: "Orbitron", sans-serif;
+  border-radius:  1.5rem;
+}
+
+.mainPageButton:hover {
+  background-color: #68b357;
+}
+
+.addGamesubmitButton{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 12rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  height: 3rem;
+
+  font-size: 1rem;
+
+  color: #5b3a1b;
+  background-color: #d8823c;
+  font-family: "Orbitron", sans-serif;
+  border-radius:  1.5rem;
+}
+
+
+.platformBoxes2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2rem;
+  margin-bottom: 4rem;
+}
+
+.platformBoxes2 input {
+  margin: 0;
+  border:#5b3a1b;
+  height: 1rem;
+  margin-left: 25rem;
+}
+.platformBoxes2 label {
+  font-family: "Cario", sans-serif;
+  padding: .025rem;
+  color:#5b3a1b
+}
+
+.updateButton{
+  margin-top: 1rem;
+  margin-left: 2rem;
+  margin-right: 12rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  height: 3rem;
+
+  font-size: 1rem;
+
+  color: #5b3a1b;
+  background-color: #d8823c;
+  font-family: "Orbitron", sans-serif;
+  border-radius:  1.5rem;
 }
